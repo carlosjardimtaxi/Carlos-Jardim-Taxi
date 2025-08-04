@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <div style="text-align:center; margin: 15px;">
+  <button onclick="mudarIdioma('pt')">🇵🇹</button>
+  <button onclick="mudarIdioma('en')"> 🇺🇸</button>
+  <button onclick="mudarIdioma('de')">🇩🇪</button>
+  <button onclick="mudarIdioma('fr')">🇫🇷 </button>
+</div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carlos Jardim Taxi Tours - Madeira</title>
+  <style>
+    body {
+      font-family: Oswald, Oswald;
+      margin: 0; padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-image: url(https://www.christophorus.at/wp-content/uploads/2023/05/Madeira-2048x1365.jpg);
+      background-size: ;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 40px;
+      background-color: rgba(0,0,0,0.6);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    header p {
+      font-size: 20px;
+      background-color: rgba(0,0,0,0.5);
+      display: inline-block;
+      padding: 5px 15px;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: ocean;
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+      background-color: baby blue;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #2c3e50;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Carlos Jardim Taxi Tours</h1>
+  <p>Explore a Ilha da Madeira com conforto, segurança e paisagens inesquecíveis</p>
+</header>
+
+<nav>
+  <a href="#sobre">Sobre</a>
+  <a href="#tours">Tours</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section> 
+   <section id="sobre">
+
+  <h2 class="lang" data-lang="pt">Sobre Nós</h2>
+  <h2 class="lang" data-lang="en" style="display:none;">About Us</h2>
+  <h2 class="lang" data-lang="de" style="display:none;">Über Uns</h2>
+  <h2 class="lang" data-lang="fr" style="display:none;">À Propos</h2>
+
+  <p class="lang" data-lang="pt">
+    Com mais de 17 anos de experiência a conduzir pelas estradas da Ilha da Madeira, sou um taxista local apaixonado por mostrar os encantos desta terra maravilhosa. Ao longo dos anos, já acompanhei mais de 2000 clientes satisfeitos, oferecendo não apenas transporte, mas também um atendimento personalizado, seguro e cheio de simpatia.<br><br>
+    Conheço cada canto da ilha — desde os miradouros mais impressionantes às levadas mais escondidas — e adapto os passeios ao ritmo, interesse e conforto de cada pessoa. Seja um tour completo pela ilha, uma levada, um transfer do aeroporto ou um passeio ao nascer do sol, o meu objetivo é sempre o mesmo: que cada cliente leve boas memórias e se sinta em casa.<br><br>
+    Sou um profissional licenciado (Licença nº 1142), totalmente dedicado ao bem-estar dos visitantes. Comigo, não vai só chegar ao destino — vai descobrir a verdadeira Madeira.<br><br>
+    <em>*N.ª de porta de táxi 1142.*</em><br>
+    *Os passeios começam e terminam na sua estadia*
+  </p>
+
+  <p class="lang" data-lang="en" style="display:none;">
+    With over 17 years of experience driving through the roads of Madeira Island, I am a local taxi driver passionate about showing the charms of this wonderful land. Over the years, I have accompanied more than 2000 satisfied clients, offering not just transportation but personalized, safe, and friendly service.<br><br>
+    I know every corner of the island — from the most impressive viewpoints to the hidden levadas — and I tailor the tours to the pace, interests, and comfort of each person. Whether a full island tour, a levada walk, an airport transfer, or a sunrise ride, my goal is always the same: for each client to take home good memories and feel at home.<br><br>
+    I am a licensed professional (License No. 1142), fully dedicated to visitors’ well-being. With me, you won’t just reach your destination — you will discover the true Madeira.<br><br>
+    <em>*Taxi license number 1142.*</em><br>
+    *Tours start and end at your accommodation*
+  </p>
+
+  <p class="lang" data-lang="de" style="display:none;">
+    Mit über 17 Jahren Erfahrung auf den Straßen der Insel Madeira bin ich ein lokaler Taxifahrer, der leidenschaftlich gerne die Reize dieses wundervollen Landes zeigt. Im Laufe der Jahre habe ich mehr als 2000 zufriedene Kunden begleitet und biete nicht nur Transport, sondern auch einen personalisierten, sicheren und freundlichen Service.<br><br>
+    Ich kenne jede Ecke der Insel – von den beeindruckendsten Aussichtspunkten bis zu den versteckten Levadas – und passe die Touren an das Tempo, die Interessen und den Komfort jedes Einzelnen an. Ob eine komplette Inselrundfahrt, eine Levada-Wanderung, ein Flughafentransfer oder eine Fahrt zum Sonnenaufgang, mein Ziel ist immer dasselbe: Jeder Kunde soll schöne Erinnerungen mitnehmen und sich wie zuhause fühlen.<br><br>
+    Ich bin ein lizenzierter Profi (Lizenz Nr. 1142), der sich voll und ganz dem Wohlbefinden der Besucher widmet. Bei mir kommen Sie nicht nur ans Ziel – Sie entdecken das wahre Madeira.<br><br>
+    <em>*Taxi-Lizenznummer 1142.*</em><br>
+    *Die Touren beginnen und enden bei Ihrer Unterkunft*
+  </p>
+
+  <p class="lang" data-lang="fr" style="display:none;">
+    Avec plus de 17 ans d'expérience à conduire sur les routes de l'île de Madère, je suis un chauffeur de taxi local passionné par la découverte des charmes de cette magnifique terre. Au fil des ans, j'ai accompagné plus de 2000 clients satisfaits, offrant non seulement un transport, mais aussi un service personnalisé, sûr et chaleureux.<br><br>
+    Je connais chaque recoin de l'île — des points de vue les plus impressionnants aux levadas cachées — et j’adapte les visites au rythme, aux intérêts et au confort de chaque personne. Qu’il s’agisse d’une visite complète de l’île, d’une balade sur une levada, d’un transfert aéroport ou d’une sortie au lever du soleil, mon objectif est toujours le même : que chaque client reparte avec de bons souvenirs et se sente chez lui.<br><br>
+    Je suis un professionnel licencié (Licence n° 1142), entièrement dédié au bien-être des visiteurs. Avec moi, vous ne ferez pas que rejoindre votre destination — vous découvrirez la véritable Madère.<br><br>
+    <em>*Numéro de licence de taxi 1142.*</em><br>
+    *Les visites commencent et se terminent à votre hébergement*
+  </p>
+
+</section>
+      
+  
+</section>
+
+<section id="tours">
+  <h2>Tours (You can choose what places you prefer)</h2>
+
+  <h3>Tour West and North off Madeira (Full Day)</h3>
+  <ul>
+    <li>Câmara de Lobos</li>
+    <li>Cabo Girão</li>
+    <li>Ribeira Brava</li>
+    <li>Ponta do Sol</li>
+    <li>Paul da Serra</li>
+    <li>Fanal</li>
+    <li>Porto Moniz</li>
+  </ul>
+  <div class="gallery">
+    <img src=https://image.urlaubspiraten.de/720/image/upload/v1603291270/mediavault_images/rwheexu3b5phchu8hsqq.jpg>
+    <img src=https://blog.madeira.best/storage/uploads/img/2020-04-29-1030535f64dcc25e2375f64dcc25e2f9.jpeg>
+    <img src=https://tse2.mm.bing.net/th/id/OIP.kM9P46w7TNaBt9wH4CIMrQHaE7?w=1600&h=1066&rs=1&pid=ImgDetMain&o=7&rm=3>
+    <img src=https://th.bing.com/th/id/R.91a3efc4bcca08cd2476fbf8f44aed7e?rik=QyHwyHN3AVBn0Q&pid=ImgRaw&r=0>
+    <img src=https://img.fotocommunity.com/fanal-9552dbb3-79e4-4dbb-9471-7e47d18e2031.jpg?height=1080>
+    <img src=https://d6qyz3em3b312.cloudfront.net/upload/images/media/2019/07/24/shutterstock_574472881.2048x1024.jpg>
+  </div>
+
+  <h3>Tour East and North of Madeira (Full Day)</h3>
+  <ul>
+    <li>Pico do Areeiro</li>
+    <li>Ribeiro Frio</li>
+    <li>Porto da Cruz</li>
+    <li>Miradouro do Guindaste</li>
+    <li>Santana</li>
+    <li>Machico</li>
+    <li>Ponta de São Lourenço</li>
+  </ul>
+  <div class="gallery">
+    <img src=https://www.madeira-holidays.eu/wp-content/uploads/2013/10/Pico-do-Areeiro.webp>
+    <img src=https://th.bing.com/th/id/R.a87ddd42721f431d2eb8043986025f27?rik=ktwK0eUhFWrplQ&riu=http%3a%2f%2fvisitmadeira.com%2fmedia%2fqimj0s14%2fmiradouro-do-ribeiro-frio-3.jpg%3fwidth%3d1920%26height%3d1080%26rnd%3d133244955073700000&ehk=oxpdF3t7EkJHRDI7MEEXKWokgW%2bVS5Ov8tJMWb%2fHXMw%3d&risl=&pid=ImgRaw&r=0>
+    <img src=https://tse4.mm.bing.net/th/id/OIP.V8578A1xmOwbaWbTprZLlgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3>
+    <img src=https://withportugal.com/uploads/filemanager/c5cf5c8f1fb8d98cf56261a13793543d/santana-madeira.jpg>
+    <img src=https://discoverportugal2day.com/wp-content/uploads/2023/04/miradouro_guindaste-1024x694.webp>
+    <img src=https://th.bing.com/th/id/R.2db7b5f2da0cf57db975fc084396e116?rik=o75xGntZyjWwxQ&pid=ImgRaw&r=0>
+  </div>
+
+  <h3>Tour Hald-Day West</h3>
+  <ul>
+    <li>Pico dos Barcelos</li>
+    <li>Câmara de Lobos</li>
+    <li>Cabo Girão</li>
+    <li>Chilldhood CR7(Visit the stadium he first played)</li>
+  </ul>
+  <div class="gallery">
+    <img src=https://blog.madeira.best/storage/uploads/img/2021-05-11-095609609a46a9beb1b609a46a9bebb6.jpeg>
+    <img src=https://visitmadeira.com/media/stsch12i/camara-de-lobos-vila-piscat%C3%B3ria-yellowbustours-yellowbustours.jpg?width=1920&height=1080&rnd=133476267340300000>
+    <img src=https://tse1.mm.bing.net/th/id/OIP._5UNr4MfWdA_Pme8cNw6gAHaE7?rs=1&pid=ImgDetMain&o=7&rm=3>
+  </div>
+
+  <h3>Levadas/ Sunrises/ Transfers Airport</h3>
+  <div class="gallery">
+    <img src=https://www.visitmadeira.com/media/bvcjwnwe/passeiosape_lagoa-do-vento-francisco-correia-2.jpg?width=1920&height=1080&rnd=133120369214170000 alt="Levada">
+    <img src=https://exclusivehomesmadeira.info/wp-content/uploads/2023/10/Madeira-Levadas-7.jpg>
+    <img src=https://live.staticflickr.com/65535/52725739570_62b74c5655_b.jpg alt="Nascer do Sol">
+    <img src=https://madeira.rtp.pt/wp-content/uploads/2024/01/movimento-aeroporto-madeira-2.jpg>
+    
+
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contact</h2>
+  <p>To know informations and prices please contact:</p>
+  <p><strong>Phone/WhatsApp:</strong> <a href="tel:+351917296819">+351 917 296 819</a></p>
+  <p><strong>Email:</strong> jardimcarlos2017@gmail.com</p>
+</section>
+
+<a class="whatsapp-float" href="https://wa.me/351917296819" target="_blank">
+  WhatsApp: Prices
+</a>
+
+<footer>
+  <p>Carlos Jardim Taxi Tours © 2025 | Licença nº 1142</p>
+</footer>
+
+</body>
+  <script>
+  function mudarIdioma(lang) {
+    const elements = document.querySelectorAll('.lang');
+    elements.forEach(el => {
+      el.style.display = (el.getAttribute('data-lang') === lang) ? 'block' : 'none';
+    });
+  }
+  // Definir idioma padrão:
+  mudarIdioma('pt');
+</script>
+ <a class="whatsapp-float" href="https://wa.me/351917296819" target="_blank">
+    WhatsApp: Prices
+  </a>
+
+  <a href="https://www.tripadvisor.com/YourPageLink" target="_blank" rel="noopener noreferrer" 
+     style="
+       position: fixed;
+       bottom: 80px; 
+       right: 20px;
+       background-color: #34E0A1;
+       color: white;
+       padding: 12px 20px;
+       border-radius: 50px;
+       font-weight: bold;
+       text-decoration: none;
+       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+       z-index: 1000;
+       display: flex;
+       align-items: center;
+       gap: 8px;
+       font-family: Arial, sans-serif;
+     ">Rate me on TripAdvisor
+</html>
